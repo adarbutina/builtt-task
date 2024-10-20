@@ -5,7 +5,7 @@ A simple e-commerce app built using React, React Router, and Redux. This app sim
 ## Technologies Used
 
 - **React**: For building the user interface.
-- **React Router**: For navigation between different pages (Login, Products, Cart).
+- **React Router**: For navigation between different pages (Login, Collection, Cart).
 - **Redux**: For managing the application state (product data, cart functionality).
 - **Sass**: For styling the components.
 - **Vite**: For faster development and project bundling.
