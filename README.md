@@ -1,6 +1,8 @@
-# React + Vite
+# Builtt Task - Instructions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Login Credentials:
+Email: test@test.com
+Password: test1234
 
 Currently, two official plugins are available:
 
