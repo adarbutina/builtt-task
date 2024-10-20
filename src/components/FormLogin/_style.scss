@@ -1,0 +1,37 @@
+.component[data-name=FormLogin] {
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 4rem;
+
+    .input__label {
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 700;
+    }
+
+    .input__field[type=text],
+    .input__field[type=password] {
+      border: none;
+      outline: 0;
+      border-bottom: 1px solid hsl(0 0% 90%);
+      font-size: 16px;
+      line-height: 24px;
+      padding-block: 1rem;
+
+      &:focus-visible {
+        border-bottom: 1px solid hsl(0 0% 0%);
+      }
+    }
+  }
+
+  .button__submit {
+    margin-block-start: 4rem;
+  }
+}

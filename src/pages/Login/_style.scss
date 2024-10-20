@@ -1,0 +1,10 @@
+.page[data-name=Login] {
+
+  .component[data-name=FormLogin] {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    inline-size: 100%;
+  }
+}

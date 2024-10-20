@@ -1,0 +1,31 @@
+.component[data-name=NavigationHeader] {
+  border-block-end: 1px solid hsl(0 0% 90%);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 2rem;
+  }
+
+  .button__cart {
+    position: relative;
+
+    .cart__count {
+      background-color: var(--color-primary);
+      color: var(--color-knockout);
+      border-radius: 9999px;
+      position: absolute;
+      inset-block-start: 0;
+      inset-inline-end: 0;
+      block-size: 2.5rem;
+      inline-size: 2.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+  }
+}

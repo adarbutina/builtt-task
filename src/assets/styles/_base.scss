@@ -1,0 +1,114 @@
+
+// Applies a consistent margin for most common elements.
+:where(h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5, p, .paragraph, ul, ol) {
+  + :where(h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5, p, .paragraph, ul, ol) {
+    margin-block-start: 20px;
+  }
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-size: var(--titleFontSize);
+  line-height: var(--titleLineHeight);
+  letter-spacing: -0.005em;
+}
+
+h1, .h1 {
+  --titleFontSize: 4rem;
+  --titleLineHeight: 5rem;
+}
+
+h2, .h2 {
+  --titleFontSize: 3rem;
+  --titleLineHeight: 4rem;
+}
+
+h3, .h3 {
+  --titleFontSize: 2.5rem;
+  --titleLineHeight: 3.5rem;
+}
+
+.container {
+  max-inline-size: 160rem;
+  margin-inline: auto;
+  padding-inline: var(--spacing-medium);
+}
+
+[data-theme] {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+}
+
+[data-size=small] {
+  max-inline-size: 40rem;
+}
+
+[data-size=medium] {
+  max-inline-size: 80rem;
+}
+
+[data-size=large] {
+  max-inline-size: 120rem;
+}
+
+[data-size=full] {
+  max-inline-size: 160rem;
+}
+
+// Button
+
+.button {
+  appearance: none;
+  background-color: var(--button-background-color);
+  outline: 1px solid var(--button-border-color);
+  color: var(--button-text-color);
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  min-block-size: 5rem;
+  min-inline-size: 5rem;
+
+  &--emphasized {
+    min-block-size: 6rem;
+    min-inline-size: 6rem;
+  }
+
+  &--primary {
+    --button-background-color: var(--color-primary);
+    --button-border-color: var(--color-primary);
+    --button-text-color: var(--color-knockout);
+
+    &:hover {
+      --button-background-color: #666;
+    }
+  }
+
+  &--secondary {
+    --button-background-color: transparent;
+    --button-border-color: var(--color-primary);
+    --button-text-color: var(--color-primary);
+
+    &:hover {
+      outline: 2px solid var(--button-border-color);
+    }
+  }
+
+  &--tertiary {
+    --button-background-color: transparent;
+    --button-border-color: transparent;
+    --button-text-color: var(--color-primary);
+
+    &:hover {
+      --button-background-color: hsl(0 0% 95%);
+    }
+  }
+}

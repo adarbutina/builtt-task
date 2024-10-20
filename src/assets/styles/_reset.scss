@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+-moz-text-size-adjust: none;
+-webkit-text-size-adjust: none;
+block-size: 100%;
+box-sizing: border-box;
+font-size: 8px;
+overflow-wrap: break-word;
+text-size-adjust: none;
+}
+
+html *,
+html *:before,
+html *:after {
+box-sizing: inherit;
+}
+
+html:focus-within {
+scroll-behavior: smooth;
+}
+
+html:has(.admin-bar) {
+-webkit-padding-before: var(--wp-admin--admin-bar--height);
+padding-block-start:var(--wp-admin--admin-bar--height);
+}
+
+html,
+body {
+block-size: 100%;
+}
+
+body {
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+line-height: 1.5;
+text-rendering: optimizeSpeed;
+text-wrap: pretty;
+}
+
+ol,
+ul {
+list-style: disc;
+padding-left: 4rem;
+}
+
+li::marker {
+font-size: 1.5rem;
+}
+
+details > summary {
+list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+display: none;
+}
+
+img,
+picture,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+display: block;
+max-inline-size: 100%;
+}
+
+input,
+button,
+textarea,
+select,
+table {
+font: inherit;
+}
+
+button {
+-moz-appearance: none;
+-webkit-appearance: none;
+align-items: center;
+appearance: none;
+background-color: transparent;
+border: 0;
+color: inherit;
+cursor: pointer;
+display: inline-flex;
+justify-content: center;
+padding: 0;
+text-align: inherit;
+}
+
+p {
+overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+overflow-wrap: break-word;
+text-wrap: balance;
+}
+
+table,
+th,
+td {
+text-align: left;
+}
+
+a {
+cursor: pointer;
+display: inline-block;
+text-decoration: none;
+}
+
+span {
+display: inline-block;
+}

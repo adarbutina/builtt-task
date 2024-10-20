@@ -1,0 +1,38 @@
+@use '@/assets/styles/reset';
+@use '@/assets/styles/variables';
+@use '@/assets/styles/fonts';
+@use '@/assets/styles/base';
+
+// Components
+@use '@/components/BlockCart/style' as BlockCart;
+@use '@/components/FormLogin/style' as FormLogin;
+@use '@/components/GridProducts/style' as GridProducts;
+@use '@/components/NavigationHeader/style' as NavigationHeader;
+
+// Pages
+@use '@/pages/Cart/style' as PageCart;
+@use '@/pages/Collection/style' as PageCollection;
+@use '@/pages/Login/style' as PageLogin;
+
+:root,
+[data-theme=default] {
+  --color-primary: hsl(0 0% 10%);
+  --color-secondary: hsl(0 0% 30%);
+  --color-background: hsl(0 0% 100%);
+  --color-knockout: hsl(0 0% 100%);
+}
+
+[data-theme=dark] {
+  --color-primary: hsl(0 0% 100%);
+  --color-secondary: hsl(0 0% 80%);
+  --color-background: hsl(0 0% 10%);
+  --color-knockout: hsl(0 0% 10%);
+}
+
+:root {
+  --font-family: 'Noto Sans', sans-serif;
+
+  --spacing-small: clamp(1rem, 1.25vw + 0.25rem, 2rem);
+  --spacing-medium: clamp(2rem, 2.5vw + 0.5rem, 4rem);
+  --spacing-large: clamp(4rem, 5vw + 1rem, 8rem);
+}
